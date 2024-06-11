@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.box:first-child{
+            background-color: red;
+        }*/
+        /*.box::first-line{
+            color:yellow;
+        }*/
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+       p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        } */
+        /* .box:nth-child(even){
+            background-color: blue;
+         } */
+        /* .box:nth-child(odd){
+            /* background-color: pink;
+          }
+          .box:nth-last-child(2){
+            background-color: aliceblue;
+          } */
+        .boxes::before {
+            content: "utkarsh is good";
+            color: paleturquoise;
+        }
+        .boxes::after{
+            content: "he is also a noo bad";
+            color: navy;
+        }
+        ::selection{
+            background-color: black;
+            color: blueviolet;
+        }
+        .box::first-letter{
+            color: peru;
+           font-size: 45px;
+
+        }
+        .box::placeholder{
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="boxes">
+        <div data-color="primary"class="box">I am first box</div>
+        <div class="box">Im a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
